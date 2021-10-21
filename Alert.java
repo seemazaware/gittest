@@ -26,7 +26,7 @@ public class Alert {
         Thread.sleep(2000);
         
        driver.findElement(By.cssSelector("#promtButton")).click();
-       System.out.println("click on Prompt");
+       System.out.println("click on Prompt button");
        Thread.sleep(2000);
 
        driver.switchTo().alert().sendKeys("Selenium");
@@ -34,8 +34,6 @@ public class Alert {
       
        
        driver.switchTo().alert().accept();
-       
-       
        
        TakesScreenshot ts= (TakesScreenshot)driver;
 	     File source =ts.getScreenshotAs(OutputType.FILE);
@@ -45,12 +43,12 @@ public class Alert {
               
        Thread.sleep(2000);
        driver.findElement(By.cssSelector("#promtButton")).click();
-       System.out.println("click on Prompt");
+       System.out.println("click on Prompt button");
        Thread.sleep(2000);
 
        driver.switchTo().alert().accept(); 
        
-       
+    // alert class   
        
       // driver.quit();
        
